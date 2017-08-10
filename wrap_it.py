@@ -18,7 +18,7 @@ def detect_syntax(window):
                                if w["name"] and w["template"]]
 
             if not active_wrappers:
-                window.status_message('Current Syntax NOT Supported')
+                window.status_message('WrapIt: Current Syntax NOT Supported')
                 return
 
             opts = [[w["name"], w["description"]] for w in active_wrappers]
@@ -33,7 +33,7 @@ class WrapItCommand(sublime_plugin.TextCommand):
         try:
             template = templates[template_name]
         except KeyError:
-            msg = "WrapThis: Template: {} not defined or wrong syntax."
+            msg = "WrapIt:: Template: {} not defined or wrong syntax."
             self.view.active_window.status_message(msg.format(template_name))
         else:
             self.view.run_command('wrap', {"template": template})
