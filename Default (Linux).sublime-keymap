@@ -1,4 +1,4 @@
 [
-    { "keys": ["ctrl+alt+w"], "command": "wrap_this_menu" }
+    { "keys": ["alt+w"], "command": "wrap_it_menu" }
 ]
 
