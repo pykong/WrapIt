@@ -1,6 +1,6 @@
 [
   {
-    "caption": "WrapThis: Choose wrapper",
-    "command": "wrap_this_menu"
+    "caption": "WrapIt: Choose wrapper",
+    "command": "wrap_it_menu"
   }
 ]
