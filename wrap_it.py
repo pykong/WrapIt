@@ -52,9 +52,9 @@ class WrapItMenuCommand(sublime_plugin.WindowCommand):
         try:
             template = self.templates[opt]
         except IndexError:
-            self.window.status_message('Sublime Wrap Cancelled.')
+            self.window.status_message('WrapIt: Sublime Wrap Cancelled.')
         except KeyError:
-            msg = "WrapThis: Definitions malformed or template missing."
+            msg = "WrapIt: Definitions malformed or template missing."
             self.window.status_message(msg)
         else:
             active_view = self.window.active_view()
