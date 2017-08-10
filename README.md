@@ -1,5 +1,5 @@
 # WrapIt
-Sublime Text 3 plugin to wrap selection in code snippet.
+Sublime Text 3 plugin to easily wrap selection in code sniblock.
 
 ## WhatFor?
 Simply wrap parts of your code in predefine code snippets.
@@ -54,9 +54,9 @@ Note: Both "name" and "template" must be filled or the respective code block wil
 
 #### templating
 - `<sel>` - where your selection should be placed
-- \n - new line
-- \t - indent for line, if preceeding <sel> tag, all lines of a multiline selection will get indented
-- ${x} - regions for <kbd>tab</kbd> navigation, just like in snippets
+- `\n` - new line
+- `\t` - indent for line, if preceeding <sel> tag, all lines of a multiline selection will get indented
+- `${x}` - regions for <kbd>tab</kbd> navigation, just like in snippets
 
 ## Custom keybinding
 As an alternative to the qick panel, commonly used wrapping can be bound to own key combination.
