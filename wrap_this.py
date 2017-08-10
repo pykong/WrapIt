@@ -2,7 +2,7 @@ import sublime
 import sublime_plugin
 import re
 
-SETTINGS_FILE = 'Preferences.sublime-settings'
+SETTINGS_FILE = 'wrap_this.sublime-settings'
 prefs = sublime.load_settings(SETTINGS_FILE)
 DEFINITIONS = prefs.get('definitions')
 SELECTION_TAG = "<sel>"
@@ -120,7 +120,10 @@ class WrapCommand(sublime_plugin.TextCommand):
 
             lines = [indent + l for l in filled_template.splitlines() if l]
 
-            new_text = '\n' + '\n'.join(lines)
+            new_text = '\n'.join(lines)
+
+            if template.startswith('\n'):
+                new_text = '\n' + new_text
 
             self.view.erase(edit, region)
             self.view.run_command('insert_snippet', {'contents': new_text})

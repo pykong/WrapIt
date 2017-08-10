@@ -1,0 +1,209 @@
+{
+   "definitions":[
+      {
+         "name":"PHP",
+         "syntaxes":[
+            "Packages/PHP/PHP.sublime-syntax"
+         ],
+         "wrappers":[
+            {
+               "name":"if",
+               "description":"Wrap with if condition",
+               "template":"if (${1}) {\n\t<sel>\n}"
+            },
+            {
+               "name":"if / else",
+               "description":"Wrap with if {} else {} block",
+               "template":"if (${1}) {\n\t<sel>\n}\nelse {\n${2}\n}"
+            },
+            {
+               "name":"while",
+               "description":"Wrap with while{} block",
+               "template":"while (${1}) {\n\t<sel>\n}"
+            },
+            {
+               "name":"for",
+               "description":"Wrap with for() {} block",
+               "template":"for (${1}) {\n\t<sel>\n}"
+            },
+            {
+               "name":"foreach",
+               "description":"Wrap with foreach() {} block",
+               "template":"foreach (${1}) {\n\t<sel>\n}"
+            },
+            {
+               "name":"try / catch",
+               "description":"Wrap with TryCatch",
+               "template":"try {\n\t<sel>\n}\n catch (${1}) {\n\t${2}\n}"
+            },
+            {
+               "name":"public function",
+               "description":"Wrap with Public Function",
+               "template":"public function ${1}()\n{\n\t<sel>\n}"
+            },
+            {
+               "name":"protected function",
+               "description":"Wrap with Protected Function",
+               "template":"protected function ${1}()\n{\n\t<sel>\n}"
+            },
+            {
+               "name":"private function",
+               "description":"Wrap with Private Function",
+               "template":"private function ${1}()\n{\n\t<sel>\n}"
+            }
+         ]
+      },
+      {
+         "name":"JavaScript",
+         "syntaxes":[
+            "Packages/JavaScript/JavaScript.sublime-syntax",
+            "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage"
+         ],
+         "wrappers":[
+            {
+               "name":"if",
+               "description":"Wrap with if condition",
+               "template":"if (${1}) {\n\t<sel>\n}"
+            },
+            {
+               "name":"if / else",
+               "description":"Wrap with if {} else {} block",
+               "template":"if (${1}) {\n\t<sel>\n}\nelse {\n${2}\n}"
+            },
+            {
+               "name":"for",
+               "description":"Wrap with for() {} block",
+               "template":"for (${1}) {\n\t<sel>\n}"
+            },
+            {
+               "name":"while",
+               "description":"Wrap with while{} block",
+               "template":"while (${1}) {\n\t<sel>\n}"
+            },
+            {
+               "name":"function declaration",
+               "description":"Wrap with function declaration",
+               "template":"function ${1}()\n{\n\t<sel>\n}"
+            },
+            {
+               "name":"function expression",
+               "description":"Wrap with function expression",
+               "template":"var ${1} = function (${1})\n{\n\t<sel>\n}"
+            },
+            {
+               "name":"arrow function",
+               "description":"Wrap with arrow function",
+               "template":"var ${1} = (${2}) => {<sel>}"
+            },
+            {
+               "name":"try / catch",
+               "description":"Wrap with TryCatch",
+               "template":"try {\n\t<sel>\n}\n catch (${1}) {\n\t${2}\n}"
+            }
+         ]
+      },
+      {
+         "name":"Python",
+         "syntaxes":[
+            "Packages/Python/Python.sublime-syntax",
+            "Packages/Python 3/Python3.tmLanguage",
+            "Packages/Python Improved/PythonImproved.tmLanguage",
+            "Packages/MagicPython/grammars/MagicPython.tmLanguage"
+         ],
+         "wrappers":[
+            {
+               "name":"if",
+               "description":"Wrap with if condition",
+               "template":"\nif ${1}:\n\t<sel>\n${2}"
+            },
+            {
+               "name":"if / else",
+               "description":"Wrap with: if - else block",
+               "template":"\nif ${1}:\n\t<sel>\nelse:\n\t${2}"
+            },
+            {
+               "name":"if / elif",
+               "description":"Wrap with: if - elif block",
+               "template":"\nif ${1}:\n\t<sel>\nelif:\n\t${2}"
+            },
+            {
+               "name":"if / elif / else",
+               "description":"Wrap with: if - elif - else block",
+               "template":"\nif ${1}:\n\t<sel>\nelif:\n\t${2}\nelse:\n\t${3}"
+            },
+            {
+               "name":"for",
+               "description":"Wrap with: for block",
+               "template":"\nfor ${1}:\n\t<sel>\n${2}"
+            },
+            {
+               "name":"while",
+               "description":"Wrap with: while block",
+               "template":"\nwhile ${1}:\n\t<sel>\n${2}"
+            },
+            {
+               "name":"def",
+               "description":"Wrap with function declaration",
+               "template":"\ndef ${1}(${2}):\n\t<sel>\n${3}"
+            },
+            {
+               "name":"try / except",
+               "description":"Wrap with: try - except block",
+               "template":"\ntry ${1}:\n\t<sel>\nexcept ${2} as e:\n\t${3}"
+            },
+            {
+               "name":"try / except / else",
+               "description":"Wrap with: try - except - else block",
+               "template":"\ntry ${1}:\n\t<sel>\nexcept ${2} as e:\n\t${3}\nelse:\n\t${4}"
+            },
+            {
+               "name":"try / except / finally",
+               "description":"Wrap with: try - except - finally block",
+                "template":"\ntry ${1}:\n\t<sel>\nexcept ${2} as e:\n\t${3}\nfinally:\n\t${4}"
+            },
+            {
+               "name":"try / except / else / finally",
+               "description":"Wrap with: try - except - else - finally block",
+                "template":"\ntry ${1}:\n\t<sel>\nexcept ${2} as e:\n\t${3}\nelse:\n\t${4}\nfinally:\n\t${5}"
+            },
+            {
+               "name":"with",
+               "description":"Wrap with: with block",
+               "template":"\nwith open(${1}) as f:\n\t<sel>"
+            },
+            {
+               "name":"class",
+               "description":"Wrap with: class declaration",
+               "template":"\nclass(${1}):\n\tdef __init__(self, ${2}):\n\t\t${3}\n\t<sel>\n"
+            }
+         ]
+      },
+      {
+         "syntaxes":[
+            "Packages/JavaScript/JSON.sublime-syntax"
+         ],
+         "wrappers":[
+            {
+               "name":"[ ]",
+               "description":"Wrap with Array",
+               "template":"[<sel>]"
+            },
+            {
+               "name":"[ ],",
+               "description":"Wrap with Array and comma",
+               "template":"[<sel>],"
+            },
+            {
+               "name":"{ }",
+               "description":"Wrap with Object",
+               "template":"{<sel>}"
+            },
+            {
+               "name":"{ },",
+               "description":"Wrap with Object and comma",
+               "template":"{<sel>},"
+            }
+         ]
+      }
+   ]
+}
