@@ -2,7 +2,7 @@ import sublime
 import sublime_plugin
 import re
 
-SETTINGS_FILE = 'wrap_this.sublime-settings'
+SETTINGS_FILE = 'wrap_it.sublime-settings'
 prefs = sublime.load_settings(SETTINGS_FILE)
 DEFINITIONS = prefs.get('definitions')
 SELECTION_TAG = "<sel>"
@@ -27,7 +27,7 @@ def detect_syntax(window):
             return opts, templates
 
 
-class WrapThisCommand(sublime_plugin.TextCommand):
+class WrapItCommand(sublime_plugin.TextCommand):
     def run(self, edit, template_name):
         _, templates = detect_syntax(self.window)
         try:
@@ -39,7 +39,7 @@ class WrapThisCommand(sublime_plugin.TextCommand):
             self.view.run_command('wrap', {"template": template})
 
 
-class WrapThisMenuCommand(sublime_plugin.WindowCommand):
+class WrapItMenuCommand(sublime_plugin.WindowCommand):
     """ Detect current file syntax and return the menu chosen template.
     An unsupported syntax will trigger a status bar warning. """
 
