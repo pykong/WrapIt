@@ -1,0 +1,3 @@
+[
+    { "keys": ["ctrl+alt+w"], "command": "wrap_this_menu" }
+]
