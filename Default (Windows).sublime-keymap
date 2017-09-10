@@ -1,3 +1,8 @@
 [
     { "keys": ["alt+w"], "command": "wrap_it_menu" }
+    // Define custom key binding for specific wrapping action like so:
+    //  {"keys": [ YOUR KEY COMBINATION ],
+    //  "command": "wrap_it",
+    //  "args": { NAME OF CODE BLOCK},
+    //  "context": [SPECIFY SYNTAX HERE]}   
 ]
