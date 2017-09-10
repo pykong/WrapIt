@@ -3,8 +3,8 @@ import sublime_plugin
 import re
 
 SETTINGS_FILE = 'wrap_it.sublime-settings'
-prefs = sublime.load_settings(SETTINGS_FILE)
-DEFINITIONS = prefs.get('definitions')
+PREFS = sublime.load_settings(SETTINGS_FILE)
+DEFINITIONS = PREFS.get('definitions')
 SELECTION_TAG = "<sel>"
 
 
@@ -88,6 +88,8 @@ class WrapCommand(sublime_plugin.TextCommand):
 
     def fill_template(self, text, template, indent, tab_size):
         tab_sel_tag = "\t" + SELECTION_TAG
+
+        text = re.sub('$', '\$', text)  # escape $
 
         # if selection should be indentend and is not already:
         if not re.search(tab_sel_tag, template):
