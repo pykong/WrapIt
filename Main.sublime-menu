@@ -1,0 +1,40 @@
+[
+  {
+    "caption": "Preferences",
+    "id": "preferences",
+    "mnemonic": "n",
+    "children":
+    [
+      {
+        "caption": "Package Settings",
+        "id": "package-settings",
+        "mnemonic": "P",
+        "children":
+        [
+          {
+            "caption": "WrapIt",
+            "children":
+            [
+              {
+                "caption": "Settings",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/WrapIt/wrap_it.sublime-settings",
+                  "default": "{\n  \n}\n"
+                }
+              },
+              {
+                "caption": "Key Bindings",
+                "command": "edit_settings",
+                "args": {
+                  "base_file": "${packages}/WrapIt/Default ($platform).sublime-keymap",
+                  "default": "// Settings in here override those in \"WrapIt/Default.sublime-settings\",\n\n{\n\t$0\n}\n"
+                }                                
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
