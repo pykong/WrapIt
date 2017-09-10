@@ -1,8 +1,7 @@
 # WrapIt
-Sublime Text 3 plugin to easily wrap selection in predefined code blocks.
+Sublime Text 3 plugin to easily wrap a text selection in predefined code blocks.
 
 ## WhatFor?
-Simply wrap parts of your code in predefine code snippets.
 - Want to surround a selection with brackets? Easy. __Just WrapIt!__
 - Need to have these few lines inside an if-else block. It's fun. __Just WrapIt!__
 - Like to join several functions into a class declaration? No problem. __Just WrapIt!__
