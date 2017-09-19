@@ -1,13 +1,14 @@
 SublimeWarpper is now WrapIt
 
-SublimeWrapper served as all well, yet now it has made place for a better successor: WrapIt.
+SublimeWrapper served us all well, yet now it has made place for an improved successor: WrapIt.
+WrapIt is a complete rewrite of SublimeWrapper.
+
 WrapIt can do anything SublimeWrapper could, but more!
 
 Now you can also:
-- easily define your own Wrapper (even for syntaxes previously not supported)
-- bind your favourite wrappers to custom keybindings
+- easily define your own custom wrappers (even for syntaxes previously not supported)
+- bind your favourite wrappers to keybindings ofyour choice
 
-WrapIt is a complete rewrite of SublimeWrapper.
 
 Find WrapIt on GitHub:
 https://github.com/bfelder/WrapIt
